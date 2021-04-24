@@ -35,7 +35,7 @@ const TodosList = ({list,onTaskDone})=>{
             }}
             keyExtractor={(item,index)=>(item.title.toString()+index.toString())}
             ListHeaderComponent={()=>{
-                return(<Text style={{padding:'3%'}}>
+                return(<Text style={{padding:'3%', textAlign:'center'}}>
                     You Completed {tasksDone} Tasks 
                 </Text>)
             }}
